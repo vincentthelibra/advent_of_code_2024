@@ -3,7 +3,7 @@ import numpy as np
 
 
 def merry_xmas():
-    df_lists = pd.read_csv('data.csv', header=None)
+    df_lists = pd.read_csv('./day_1/data.csv', header=None)
     df_lists[[1, 2]] = df_lists[0].str.split(' ', n=1, expand=True)
 
     df_list_a = df_lists[1].sort_values(ascending=True).reset_index(drop=True)
